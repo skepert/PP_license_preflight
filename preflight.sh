@@ -6,12 +6,15 @@ pathCheck1="/Applications/Pronunciation Power 1.app/Contents/resource/subkick.dc
 path1="/Applications/Pronunciation Power 1.app/Contents/resource"
 path2="/Applications/Pronunciation Power 2.app/Contents/resource"
 
+year=$(date +"%Y")
+year=$(($year - 1))
+
 if [ -e "$pathCheck1" ]
 	then
 	
 		echo "Pronunciation Power is installed"
-		mv "$path1/subkick.dcr" "$path1/subkick.2013.dcr"
-		mv "$path2/subkick.dcr" "$path2/subkick.2013.dcr"
+		mv "$path1/subkick.dcr" "$path1/subkick.$year.dcr"
+		mv "$path2/subkick.dcr" "$path2/subkick.$year.dcr"
 		
 	else
 	
