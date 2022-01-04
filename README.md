@@ -1,4 +1,4 @@
-PP_license_preflight
+PronunciationPower_license_preflight
 ====================
 
 Preflight script for Pronunciation Power Licensing file updates
